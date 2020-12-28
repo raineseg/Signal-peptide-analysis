@@ -1,0 +1,29 @@
+пример запроса на signalP
+>>> ./signalp -fasta ../test/euk10.fsa -org euk -format short -prefix euk_10_short
+
+установка pip
+>>> sudo apt install python3-pip
+
+список пакетов python
+>>> pip3 list
+
+установка пакета через pip
+>>> pip3 install [name]
+
+загрузка протеина через kblin
+>>>   --format protein-fasta
+
+загрузка рода бактрерий (по NCBI) пример
+>>> ncbi-genome-download --genera Streptomyces bacteria
+
+загрузка определенных видов пример
+>>> ncbi-genome-download --genera "Streptomyces coelicolor,Escherichia coli" bacteria
+
+возможно загрузить данные родов из текстового файла. Названия родов записывать в столбик с заглавной. пример
+>>> ncbi-genome-download --genera my_genera.txt bacteria
+
+загрузка протеома конкретного таксона пример
+>>> ncbi-genome-download --format protein-fasta --genera Cardiobacterium bacteria
+
+
+./signalp -fasta ~/refseq -org gram- -format short -prefix test1
