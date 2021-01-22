@@ -1,5 +1,10 @@
-Использованные пакеты
+Использованные пакеты и программы
 
 https://ggplot2.tidyverse.org/ (R)
 https://github.com/kblin/ncbi-genome-download (Python)
 data.table (R)
+http://www.cbs.dtu.dk/services/SignalP/
+https://rstudio.com/
+https://www.jetbrains.com/pycharm/
+stringi (R)
+string (R)
