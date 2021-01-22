@@ -20,7 +20,7 @@ do
 	rm -f $BASE ## удаление промежуточного файла
 	rm -f "$BASE"_summary.signalp5 ## удаление промежуточного файла
 	echo
-done < allpaths.txt
+done < allpaths.txt ## список всех протеомов
 
 
 find . -type f -name '*.union' > finals.txt
@@ -36,3 +36,4 @@ done < finals.txt
 
 sed '1 i name	sequence	ID	Prediction	SP(Sec/SPI)	TAT(Tat/SPI)	LIPO(Sec/SPII)	OTHER	CS Position' < allpredictions0.txt > allpredictions.txt ## добавление заголовка
 rm -f allpredictions0.txt ## удаление промежуточного файла
+## GCF_000160655.1_ASM16065v1_protein.faa тестовый файл
