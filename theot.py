@@ -4,5 +4,4 @@ with open('file.txt', 'r') as file:
   splt = [data[i:i+n] for i in range(0, len(data), n)]
   for i in splt:
     print(i)
-    
-
+  
