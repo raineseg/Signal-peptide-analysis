@@ -3,6 +3,17 @@ library(stringi)
 library(stringr)
 library(ggplot2)
 
+#theoretical info
+data_f <- fread("/home/evgenii/refseq/theot_done.txt")
+data_f$charge_16 <- str_count(data_f$Sequence, "R") +
+  str_count(data_f$Sequence, "K") - 
+  str_count(data_f$Sequence, "D") - 
+  str_count(data_f$Sequence, "E")
+
+ggplot(data_f, aes(x = charge_16)) + 
+  theme_bw() +
+  geom_density(alpha=.2, fill="#FF6666", adjust = 2)
+
 data <- fread('/home/evgenii/refseq/bacteria/allpredictions.txt')
 # colnames(data)
 
@@ -42,10 +53,12 @@ data_filtered$charge_50 <- str_count(data_filtered$cleaved_protein_N_term_50, "R
 
 # histogram
 ggplot(data_filtered, aes(x = charge_16))+
-  geom_histogram(binwidth = 1, fill="black", col="grey") +
+  geom_histogram(aes(y=..density..), binwidth = 1, fill="white", alpha=.7, col="black") +
   facet_wrap(~ Prediction) +
   theme_bw() +
-  labs(x = "Net charge", y = "Sequence count", title = "Net charge distributions in the N-terminal 16-residue region")
+  labs(x = "Net charge", y = "Density", title = "Net charge distributions in the N-terminal 16-residue region")+
+  geom_density(alpha=.3, fill="blue", adjust = 7)+
+  geom_density(data = data_f, aes(x = charge_16), alpha=.1, col="#FF6666", adjust = 1.8)
 
 ggplot(data_filtered, aes(x = charge_50))+
   geom_histogram(binwidth = 1, fill="black", col="grey") +
