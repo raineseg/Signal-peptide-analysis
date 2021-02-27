@@ -5,4 +5,4 @@ with open('file.txt', 'r') as file:
   for i in splt:
     print(i)
     
-#отдельная благодарность за помощь Саше trall Изису
+
