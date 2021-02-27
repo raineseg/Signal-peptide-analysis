@@ -1,0 +1,13 @@
+тестовые таксоны:
+Cardiobacerium 20k, Salmonella enterica subsp. houtenae 100k, Yersinia frederiksenii 200k, Veillonella 200k
+Отдельные классы:
+Neisseria 4600k, (Moraxella 486k), Enterobacteria 179925k, Klebsiella 47100k, Proteus 832k, Salmonella 45000k, Shigella 8578k, (Yersinia 3337k), Pseudomonas 41504k, Burkholderia 22909k, Stenotrophomonas 2807k, (Haemophilus 1532k), Bordetella 5606k, Brucella 1092k, (Pasteurella 462k), Rickettsia 189k, (Coxiella 135k), Vibrio 17628k, Spirillum 2, Campylobacter 3694k, Helicobacter 3355k, Raoultella 776k
+Таксоны:
+- Proteobacteria 430295k
+- Bacteroidetes 32127k
+- Spirochaetales 876k
+- (Veillonella 215k)
+
+
+Важно, что в статье есть 100% не все, например, Fusobacteria
+
